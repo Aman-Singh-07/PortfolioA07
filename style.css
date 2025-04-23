@@ -1,0 +1,431 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #0e1217;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Background Video */
+  .back-vid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.2;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+  
+  nav h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #4acfee;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    flex-wrap: wrap;
+  }
+  
+  .hero-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero-info h1 {
+    font-size: 50px;
+    color: #4acfee;
+  }
+  
+  .hero-info h2 {
+    font-size: 30px;
+    margin: 15px 0;
+    color: #ffffff;
+  }
+  
+  .hero-info p {
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    border: none;
+    background-color: #4acfee;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: #4acfee;
+  }
+  
+  .ul-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .ul-icons i {
+    font-size: 26px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .ul-icons i:hover {
+    color: #4acfee;
+  }
+  
+  /* Hero Image */
+  .hero-img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-img img {
+    max-width: 350px;
+    border-radius: 50%;
+    border: 5px solid #4acfee;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Info Cards */
+  .info-sec {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 60px 10%;
+    gap: 20px;
+  }
+  
+  .info-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px 35px;
+    border-radius: 20px;
+    text-align: center;
+    flex: 1 1 180px;
+    border: 1px solid #4acfee;
+  }
+  
+  .info-card h1 {
+    font-size: 36px;
+    color: #4acfee;
+    margin-bottom: 10px;
+  }
+  
+  .info-card p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Section Templates */
+  .about-section,
+  .projects-section,
+  .skills-section,
+  .contact-section {
+    padding: 60px 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 50px auto;
+    border-radius: 30px;
+    color: white;
+  }
+  
+  .about-section h2,
+  .projects-section h2,
+  .skills-section h2,
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4acfee;
+    text-align: center;
+  }
+  
+  .about-section p,
+  .projects-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Skills List */
+  .skills-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-section li {
+    background-color: #0e1217;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #4acfee;
+    transition: 0.3s ease;
+  }
+  
+  .skills-section li:hover {
+    background-color: #4acfee;
+    color: #0e1217;
+    transform: scale(1.05);
+  }
+  
+  /* Contact Form */
+  .contact-section .content {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact-section .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1c1f26;
+    color: white;
+  }
+  
+  .btn-submit {
+    background-color: #4acfee;
+    border: none;
+    padding: 12px 30px;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: white;
+    color: #4acfee;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .info-sec {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .nav-links {
+      gap: 15px;
+    }
+  
+    .hero-img img {
+      max-width: 250px;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .projects-section {
+    padding: 60px 10%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    margin-top: 40px;
+  }
+  
+  .projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #4acfee, #53f8c9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid #4acfee;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(74, 207, 238, 0.2);
+  }
+  
+  .project-card h3 {
+    color: #4acfee;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #4acfee;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  .project-card a:hover {
+    background-color: transparent;
+    border: 2px solid #4acfee;
+    color: #4acfee;
+  }
+  
+  .certificates-section {
+    padding: 60px 10%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    margin-top: 40px;
+  }
+  
+  .certificates-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #4acfee, #53f8c9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .certificate-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid #4acfee;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(74, 207, 238, 0.2);
+  }
+  
+  .certificate-card h3 {
+    color: #4acfee;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .certificate-card p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #ddd;
+  }
+  
+  .certificate-card a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #4acfee;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  
+  .certificate-card a:hover {
+    background-color: transparent;
+    border: 2px solid #4acfee;
+    color: #4acfee;
+  }
+  
+  
