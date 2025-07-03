@@ -51,7 +51,7 @@ Pursuing BTech in Computer Science at **Madan Mohan Malaviya University of Techn
 ## 📬 Contact
 
 - 📧 Email: amansingh17112004@gmail.com
-- 🔗 [LinkedIn](www.linkedin.com/in/aman-singh-3a4a06327)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/aman-singh-3a4a06327/)
 - 🐙 [GitHub](https://github.com/Aman-Singh-07)
 
 ---
